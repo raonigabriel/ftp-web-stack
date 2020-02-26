@@ -6,6 +6,7 @@ The default config will share the /var/www/html folder on the host with the ngni
 Please notice the **USERS** and **ADDRESS** environment variables on the ftp service:
 
 USERS=john.doe|12345678|/var/www/html
+
 ADDRESS=ftp.example.com 
 
 More info, please see [https://github.com/delfer/docker-alpine-ftp-server](delfer-alpine) docs.
@@ -20,4 +21,5 @@ docker-compose up -d
 
 ## Reference:
 https://hub.docker.com/_/nginx
+
 https://hub.docker.com/r/delfer/alpine-ftp-server

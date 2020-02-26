@@ -1,0 +1,22 @@
+version: '2'
+
+services:
+  ftp:
+    image: delfer/alpine-ftp-server
+    restart: unless-stopped
+    ports:
+      - "21:21"
+      - "21000-21010:21000-21010"  
+    volumes:
+      - /var/www/html:/var/www/html
+    environment:
+      - USERS=john.doe|12345678|/var/www/html
+      - ADDRESS=ftp.example.com 
+
+  web:
+    image: nginx:alpine
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - /var/www/html:/usr/share/nginx/html:ro

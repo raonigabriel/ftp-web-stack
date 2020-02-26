@@ -9,8 +9,7 @@ USERS=john.doe|12345678|/var/www/html
 
 ADDRESS=ftp.example.com 
 
-More info, please see [https://github.com/delfer/docker-alpine-ftp-server](delfer-alpine) docs.
-
+More info, please see [delfer-alpine](https://github.com/delfer/docker-alpine-ftp-server) docs.
 
 ## Usage:
 ```
